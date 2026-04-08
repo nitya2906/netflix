@@ -3,8 +3,7 @@ import pandas as pd
 
 
 
-    result.plot(kind='bar')
-    plt.show()
+    
 
 elif "genre" in question:
     result = df['listed_in'].value_counts().head(5)
