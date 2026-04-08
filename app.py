@@ -92,7 +92,7 @@ question = st.text_input("Ask your question:")
 if question:
     st.write(f"You asked: {question}")
     st.write("Sorry, I can only respond to a fixed set of questions now")
-!streamlit run app.py
+
 
 
 
