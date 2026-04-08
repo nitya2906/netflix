@@ -7,43 +7,9 @@ import pandas as pd
 
 
 
-else:
-    print("❌ Question not supported")
-while True:
-    question = input("Ask your question (type 'exit'): ").lower()
 
-    if question == "exit":
-        break
 
-    elif "country" in question:
-        print(df['country'].value_counts().head(5))
 
-    elif "genre" in question:
-        print(df['listed_in'].value_counts().head(5))
-
-    elif "year" in question:
-        print(df['release_year'].value_counts().head(5))
-
-    elif "rating" in question:
-        print(df['rating'].value_counts().head(5))
-
-    elif "movie" in question:
-        print(df['type'].value_counts())
-
-    elif "recent" in question:
-        print(df.sort_values(by='release_year', ascending=False).head(5))
-
-    else:
-        print("❌ Not supported")
-if any(word in question for word in ["country", "nation", "place"]):
-    print(df['country'].value_counts().head(5))
-
-elif any(word in question for word in ["genre", "category", "type"]):
-    print(df['listed_in'].value_counts().head(5))
-
-elif any(word in question for word in ["year", "date", "released"]):
-    print(df['release_year'].value_counts().head(5))
-import sys
 
 import streamlit as st
 import streamlit as st
