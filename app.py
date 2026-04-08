@@ -77,7 +77,7 @@ elif any(word in question for word in ["genre", "category", "type"]):
 elif any(word in question for word in ["year", "date", "released"]):
     print(df['release_year'].value_counts().head(5))
 import sys
-!{sys.executable} -m pip install streamlit
+
 import streamlit as st
 import streamlit as st
 import pandas as pd
