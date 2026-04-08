@@ -5,17 +5,7 @@ import pandas as pd
 
     
 
-elif "genre" in question:
-    result = df['listed_in'].value_counts().head(5)
-    print("\nTop Genres:\n", result)
-    result.plot(kind='bar')
-    plt.show()
 
-elif "year" in question:
-    result = df['release_year'].value_counts().head(5)
-    print("\nTop Years:\n", result)
-    result.plot(kind='bar')
-    plt.show()
 
 else:
     print("❌ Question not supported")
