@@ -1,15 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df
-df.head()
-df.tail()
-df.info()
-df.shape
-df.describe()
-df.isnull().sum()
-df = df.dropna()
-print("Null values removed ✅")
+
 top_countries = df['country'].value_counts().head(5)
 print(top_countries)
 top_genres = df['listed_in'].value_counts().head(5)
