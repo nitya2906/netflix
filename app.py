@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-df= pd.read_csv('/content/netflix_titles.csv')
+
 df
 df.head()
 df.tail()
