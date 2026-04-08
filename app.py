@@ -2,19 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-top_countries = df['country'].value_counts().head(5)
-print(top_countries)
-top_genres = df['listed_in'].value_counts().head(5)
-print(top_genres)
-top_genres.plot(kind='pie')
-plt.title("Top Genres")
-plt.show()
-top_years = df['release_year'].value_counts().head(5)
-print(top_years)
-question = input("Ask your question: ")
-if "country" in question:
-    result = df['country'].value_counts().head(5)
-    print("\nTop Countries:\n", result)
+
     result.plot(kind='bar')
     plt.show()
 
