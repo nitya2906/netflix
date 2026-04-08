@@ -81,7 +81,6 @@ import sys
 import streamlit as st
 import streamlit as st
 import pandas as pd
-%%writefile app.py
 import streamlit as st
 import pandas as pd
 
